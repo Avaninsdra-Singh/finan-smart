@@ -2,10 +2,20 @@
 import OpenAI from "openai";
 
 // Initialize the OpenAI client
+// const openai = new OpenAI({
+//   apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
+//   dangerouslyAllowBrowser: true,
+// });
 const openai = new OpenAI({
   apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
   dangerouslyAllowBrowser: true,
 });
+
+// console.log("OpenAI API Key:", process.env.NEXT_PUBLIC_OPENAI_API_KEY);
+// const openai = new OpenAI({
+//   apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
+//   dangerouslyAllowBrowser: true,
+// });
 
 // Function to fetch user-specific data (mocked for this example)
 
